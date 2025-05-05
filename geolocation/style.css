@@ -1,0 +1,32 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
+    padding: 20px;
+    /* max-width: 600px; */
+    text-align: center;
+}
+
+button{
+    padding: 10px 20px;
+    background: #4285f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    background: #3367d6;
+}
+
+#locationResult{
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    min-height: 100px;
+}
+
+.loading{
+    display: none;
+    margin: 10px auto;
+}

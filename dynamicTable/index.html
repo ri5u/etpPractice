@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Tables</title>
+    <script src="script.js" defer></script>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+
+        .controls{
+            justify-content: center;
+            align-items: center;
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .table{
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th,td{
+            border: 2px solid rgb(223, 87, 110);
+            padding: 8px;
+            text-align: center;
+        }
+        th{
+            background-color: pink;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table {
+            margin: 0 auto; /* Additional centering guarantee */
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <h2>Table Generator</h2>
+        <label for="rows">Rows:</label>
+        <input type="number" id="rows" min="1" value="3">
+        
+        <label for="columns">Columns:</label>
+        <input type="number" id="columns" min="1" value="3">
+
+        <button id="generateBtn">Generate Table</button>
+    </div>
+
+    <div class="table-container">
+
+    </div>
+</body>
+</html>
